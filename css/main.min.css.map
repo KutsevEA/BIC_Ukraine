@@ -1,8 +1,11 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AECA,AAAA,UAAU,AAAC,CACT,WAAW,CAAE,IAAI,CACjB,YAAY,CAAE,IAAI,CAClB,OAAO,CAAE,MAAM,CAChB,AAED,AAAA,KAAK,AAAC,CACJ,UAAU,CAAE,IAAI,CAChB,OAAO,CAAE,CAAC,CACV,MAAM,CAAE,CAAC,CACV,AAED,AAAA,QAAQ,AAAC,CACP,OAAO,CAAE,MAAM,CAChB",
     "sources": [
-        "../saas/main.scss"
+        "../saas/main.scss",
+        "../saas/utils/_colors.scss",
+        "../saas/utils/_global.scss",
+        "../saas/components/_header.scss"
     ],
     "names": [],
     "file": "main.min.css"
