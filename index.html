@@ -5,35 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&family=Saira:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <header>
-      <nav>
-        <ul class="list">
-          <li>
-            <a href="#">About us</a>
-          </li>
+      <div class="container header-container">
+        <button class="mobile-menu__button" type="button" data-menu-button aria-expanded="false">
+          <img class="mobile-menu__iconOpen" src="./images/openmenu.svg" alt="Open menu button" />
+          <img
+            class="mobile-menu__iconClose"
+            src="./images/closemenu.svg"
+            alt="Close menu button"
+          />
+        </button>
 
-          <li>
-            <a href="#">Product</a>
-          </li>
+        <div class="mobile-menu animate__animated animate__fadeIn" data-menu>
+          <nav>
+            <ul class="site-nav list animate__animated animate__bounceInDown">
+              <li class="site-nav__item">
+                <a href="#aboutUs">About us</a>
+              </li>
 
-          <li>
-            <a href="#">Contacts</a>
-          </li>
-        </ul>
-      </nav>
+              <li class="site-nav__item">
+                <a href="#product">Product</a>
+              </li>
+
+              <li class="site-nav__item">
+                <a href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -49,7 +66,7 @@
       </section>
 
       <!-- Who we are Section -->
-      <section class="section">
+      <section id="aboutUs" class="section">
         <div class="container">
           <h2>We help you to become better for your clients</h2>
           <p>
@@ -179,7 +196,7 @@
       </section>
 
       <!-- Product Section  -->
-      <section class="section">
+      <section id="product" class="section">
         <div class="container">
           <!--Contact Center Platform  -->
           <h2>Contact Center Platform</h2>
@@ -531,7 +548,7 @@
       </section>
 
       <!-- Contucts Section -->
-      <section class="section">
+      <section id="contacts" class="section">
         <div class="container">
           <h2>For Any Assistance Required Please Reach Out</h2>
           <!-- Contact Form  -->
@@ -571,5 +588,6 @@
         </div>
       </section>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
